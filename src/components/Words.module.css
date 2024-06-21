@@ -1,0 +1,33 @@
+header {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping of divs to next line */
+}
+
+.tt div {
+    border: solid 1px #333;
+    background: #dedede;
+    margin: 10px 3px; /* Margin between items */
+    text-align: center;
+    border-radius: .6rem;
+    transition: background 0.3s ease;
+    flex: 1 1 calc(25% - 6px); /* 20% width minus the total horizontal margin (3px left + 3px right) */
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
+}
+
+.tt div:hover {
+    cursor: pointer;
+    background: #fff;
+}
+
+.tt {
+    border: solid .1rem #999;
+    border-radius: .6rem;
+    padding: 6rem;
+    margin: 3rem auto;
+    max-width: 100%; /* Optional: Prevents the header from being too wide */
+}
+
+.blue {
+    background: #4cf;
+    color: #313131;
+}
